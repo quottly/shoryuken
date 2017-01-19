@@ -13,7 +13,7 @@ module Shoryuken
 
     trap_exit :processor_died
 
-    BATCH_LIMIT = 10
+    BATCH_LIMIT = 1
 
     def initialize(condvar)
       @count = Shoryuken.options[:concurrency] || 25
